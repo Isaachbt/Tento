@@ -116,7 +116,7 @@
         app:srcCompat="@drawable/add_pontos" />
 
     <ImageButton
-        android:id="@+id/deminuirPontosPlayer"
+        android:id="@+id/diminuirPontosPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
@@ -148,15 +148,18 @@
         android:text="Truco"
         android:textAlignment="center"
         android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="551dp" />
+        app:layout_constraintTop_toBottomOf="@+id/addPontosPlayer"
+        app:layout_constraintVertical_bias="0.394" />
 
     <TextView
         android:id="@+id/vitoriaPlayer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="0"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pontosPlayer"
@@ -169,7 +172,7 @@
         android:layout_width="wrap_content"
         android:layout_height="23dp"
         android:layout_marginBottom="4dp"
-        android:text="1"
+        android:text="0"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/pontosAdversario"
